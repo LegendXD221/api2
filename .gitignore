@@ -1,0 +1,12 @@
+node_modules/
+logs/
+.env
+.env.local
+*.log
+coverage/
+.DS_Store
+.vercel
+dist/
+tmp/
+*.zip
+package-lock.json
