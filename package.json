@@ -1,48 +1,13 @@
 {
-  "name": "bypass-api",
-  "version": "3.0.0",
-  "description": "World's Best Link Bypass API - 88 services, Turnstile, advanced anti-bot, CAPTCHA solving",
-  "main": "src/index.js",
+  "name": "bypass-worker-lite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare Worker bypass — only services that work without a browser",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "NODE_ENV=development node --watch src/index.js",
-    "test": "jest --forceExit --detectOpenHandles",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "dependencies": {
-    "axios": "^1.7.7",
-    "cache-manager": "^5.7.6",
-    "cache-manager-redis-yet": "^5.1.5",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.1",
-    "express-rate-limit": "^7.4.1",
-    "helmet": "^8.0.0",
-    "ioredis": "^5.4.1",
-    "uuid": "^10.0.0",
-    "winston": "^3.15.0",
-    "winston-daily-rotate-file": "^5.0.0"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "supertest": "^7.0.0"
-  },
-  "keywords": [
-    "bypass",
-    "linkvertise",
-    "adlink",
-    "turnstile",
-    "captcha",
-    "anti-bot"
-  ],
-  "license": "MIT",
-  "jest": {
-    "testEnvironment": "node",
-    "testMatch": ["**/tests/**/*.test.js"],
-    "collectCoverageFrom": ["src/**/*.js"]
+    "wrangler": "^3.90.0"
   }
 }

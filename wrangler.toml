@@ -1,0 +1,7 @@
+name = "bypass-worker-lite"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+BYPASS_DEADLINE_MS = "20000"
